@@ -1,12 +1,15 @@
 package edu.ycp.cs320.movethesquare.model;
 
-public class Square {
-	private double x, y, width, height;
+public class Circle {
+	private double x, y, width, height, radius;
 	
-	public Square() {
+	public Circle() {
+		radius = 10;
 		
 	}
-	
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
 	public void setX(double x) {
 		this.x = x;
 	}

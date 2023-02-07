@@ -3,7 +3,7 @@ package edu.ycp.cs320.movethesquare.model;
 public class Game {
 	public static final double MOVE_DIST = 2.0; // x/y distance square moves each tick 
 	private double width, height;
-	private Square square;
+	private Circle circle;
 	private double squareDx;
 	private double squareDy;
 	
@@ -11,12 +11,12 @@ public class Game {
 		
 	}
 	
-	public void setSquare(Square square) {
-		this.square = square;
+	public void setSquare(Circle circle) {
+		this.circle = circle;
 	}
 	
-	public Square getSquare() {
-		return square;
+	public Circle getCircle() {
+		return circle;
 	}
 	
 	public void setWidth(double width) {
@@ -50,4 +50,7 @@ public class Game {
 	public double getSquareDy() {
 		return squareDy;
 	}
-}
+
+	
+
+	}
