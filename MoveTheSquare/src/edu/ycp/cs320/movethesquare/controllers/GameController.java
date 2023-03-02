@@ -20,13 +20,13 @@ public class GameController {
 				moveY = -Game.MOVE_DIST;
 			}
 			
-			game.setSquareDx(moveX);
-			game.setSquareDy(moveY);
+			game.setCircleDx(moveX);
+			game.setCircleDy(moveY);
 		}
 	}
 
 	public void moveSquare(Game model, Circle circle) {
-		circle.setX(circle.getX() + model.getSquareDx());
-		circle.setY(circle.getY() + model.getSquareDy());
+		circle.setX(circle.getX() + model.getCircleDx());
+		circle.setY(circle.getY() + model.getCircleDy());
 	}
 }

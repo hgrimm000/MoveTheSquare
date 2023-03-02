@@ -69,8 +69,7 @@ public class GameView extends JPanel {
 		g.setColor(Color.RED);
 
 		Circle circle = model.getCircle();
-		
-		g.fillRect((int) circle.getX(), (int) circle.getY(), (int) circle.getWidth(), (int) circle.getHeight());
+		g.fillOval((int) circle.getX(), (int) circle.getY(), circle.getDiameter(),circle.getDiameter());
 	}
 	
 	public static void main(String[] args) {
@@ -81,13 +80,13 @@ public class GameView extends JPanel {
 				model.setWidth(640.0);
 				model.setHeight(480.0);
 				
-				Circle circle = new Circle();
+				Circle circle = new Circle(10);
 				circle.setX(300.0);
 				circle.setY(220.0);
-				circle.setWidth(20.0);
-				circle.setHeight(20.0);
-				circle.setRadius(10);
-				model.setSquare(circle);
+				//circle.setWidth(20.0);
+				//circle.setHeight(20.0);
+				circle.setRadius(100);
+				model.setCircle(circle);
 				
 				GameController controller = new GameController();
 				
